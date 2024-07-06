@@ -5,21 +5,21 @@
 
 using namespace std;
 
-int n, inDegree[10]; // inDegree : ÁøÀÔÂ÷¼ö ¹è¿­
+int n, inDegree[10]; // inDegree : ì§„ì…ì°¨ìˆ˜ ë°°ì—´
 vector<int> a[10];
 
 void topologySort() {
 	int result[10];
 	queue<int> q;
 
-	// ÁøÀÔ Â÷¼ö°¡ 0ÀÎ ³ëµå¸¦ Å¥¿¡ »ğÀÔ
+	// ì§„ì… ì°¨ìˆ˜ê°€ 0ì¸ ë…¸ë“œë¥¼ íì— ì‚½ì…
 	for (int i = 1; i <= n; i++) {
 		if (inDegree[i] == 0) q.push(i);
 	}
 	for (int i = 1; i <= n; i++) {
-		// n°³¸¦ ¹æ¹®ÇÏ±â Àü¿¡ Å¥°¡ ºó´Ù¸é »çÀÌÅ¬ÀÌ ¹ß»ı
+		// nê°œë¥¼ ë°©ë¬¸í•˜ê¸° ì „ì— íê°€ ë¹ˆë‹¤ë©´ ì‚¬ì´í´ì´ ë°œìƒ
 		if (q.empty()) {
-			cout << "»çÀÌÅ¬ÀÌ ¹ß»ıÇß½À´Ï´Ù." << endl;
+			cout << "ì‚¬ì´í´ì´ ë°œìƒí–ˆìŠµë‹ˆë‹¤." << endl;
 			return;
 		}
 		int x = q.front();
