@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="196dp"
+        app:srcCompat="@drawable/food" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FIND MY RECIPE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+
+
+        />
+
+    <TextView
+        android:id="@+id/recommendTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘의 추천 레시피"
+        android:textStyle="bold"
+        android:gravity="start|center_vertical"
+        android:textSize="18sp"
+        android:paddingStart="40dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/recommendTxtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:textColor="@android:color/darker_gray"
+        android:text="시금치카레"
+        android:gravity="start|center_vertical"
+        android:textSize="15sp"
+        android:paddingStart="50dp"/>
+
+    <TextView
+        android:id="@+id/searchTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="검색"
+        android:textStyle="bold"
+        android:gravity="start|center_vertical"
+        android:textSize="18sp"
+        android:paddingStart="40dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/searchTxtContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/darker_gray"
+            android:text="시금치"
+            android:gravity="start|center_vertical"
+            android:textSize="15sp"
+            android:paddingStart="50dp"
+            android:layout_marginEnd="50dp" />
+
+        <android.widget.Button
+            android:id="@+id/searchConfirm"
+            android:layout_width="67dp"
+            android:layout_height="37dp"
+            android:background="@drawable/button_style"
+            android:text="확인"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <android.widget.Button
+        android:id="@+id/recipeAdd"
+        android:layout_width="371dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_style"
+        android:text="레시피 추가하기"
+        android:textColor="@color/white" />
+
+    <android.widget.Button
+        android:id="@+id/viewRecipe"
+        android:layout_width="371dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_style"
+        android:text="레시피 보기"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

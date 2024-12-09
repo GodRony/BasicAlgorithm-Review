@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRecipe"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/recipeAddTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="레시피 추가"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <!-- 요리 이름 입력 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="요리 이름:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/foodNameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="요리 이름 입력"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background" />
+    </LinearLayout>
+
+    <!-- 칼로리 입력 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/kcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kcal:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/kcalInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="칼로리 입력"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background" />
+    </LinearLayout>
+    <!-- 재료 입력 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="재료 입력:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/ingredientsInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="재료 입력"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background" />
+    </LinearLayout>
+
+    <!-- 요리법 입력 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="레시피 입력:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/recipeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="레시피 입력"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background" />
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/confirm"
+        android:layout_width="347dp"
+        android:layout_height="32dp"
+        android:background="@drawable/button_style"
+        android:text="확인"
+        android:textColor="@color/white" />
+
+</LinearLayout>
